@@ -56,16 +56,16 @@
 				<div class="ctn-image">
 					<img class="hero__image" src="https://www.immoweb.be/Mx_Photos/nl/490/3012_4A360997-1321-B1DA-60C51AF12C65B8C5_NL.jpg" alt="">
 				</div>
-				<div class="hero__text">
+				<div class="hero__content">
 					<div>
-						<h1>
+						<h1 class="hero__heading">
 							Villa met grote tuin
 						</h1>
-						<p>
+						<p class="hero__text">
 							Deze woning met tuin en twee garages is gelegen in het centrum van Willebroek en heeft een goede verbinding met A12.
 						</p>
 					</div>
-					<hr>
+					<hr class="hero__hr">
 					<div class="row">
 						<div class="row">
 							<i class="fas fa-map-marker-alt icon"></i>
@@ -89,59 +89,129 @@
 				</div>
 			</div>
 		</header>
-		<section>
-			<nav>
-				<ul>
-					<li>
-						Te koop
-					</li>
-					<li>
-						Te huur
-					</li>
-					<li>
-						Vakantie
-					</li>
-					<li>
-						plaats zoekertje
-					</li>
-				</ul>
-			</nav>
-			<div>
-				<div>
-					<p>
-						Type vastgoed
-					</p>
-					<div>
-						<i class="fas fa-home icon"></i>
-						<select>
-							<option value="huis">Huizen</option>
-							<option value="appartement">Appartementen</option>
-							<option value="studio">Studio's</option>
-						</select>
+		<main class="main">
+			<section class="section section--white is-pull-up">
+				<nav class="nav">
+					<ul class="nav__bar">
+						<li class="nav__item">
+							Te koop
+						</li>
+						<li class="nav__item">
+							Te huur
+						</li>
+						<li class="nav__item">
+							Vakantie
+						</li>
+						<li class="nav__item">
+							plaats zoekertje
+						</li>
+					</ul>
+				</nav>
+				<form class="form">
+					<div class="row">
+						<div class="form__group">
+							<label class="label" for="type">
+								Type vastgoed
+							</label>
+							<div class="row">
+								<i class="fas fa-home icon icon--blue"></i>
+								<select class="select" id="type">
+									<option value="huis">Huizen</option>
+									<option value="appartement">Appartementen</option>
+									<option value="studio">Studio's</option>
+								</select>
+							</div>
+						</div>
+						<div class="form__group">
+							<label class="label" for="country">
+								Land
+							</label>
+							<div>
+								<i class="fas fa-globe-africa icon icon--blue"></i>
+								<input id="country" type="text">
+							</div>
+						</div>
+						<div class="form__group">
+							<label class="label" for="place">
+								Ligging
+							</label>
+							<div>
+								<i class="fas fa-map-marker-alt icon icon--blue"></i>
+								<input id="place" type="text">
+							</div>
+						</div>
 					</div>
-				</div>
-				<div>
-					<p>
-						Land
-					</p>
-					<div>
-						<i class="fas fa-globe-africa"></i>
-						<input type="text">
-					</div>
-				</div>
-				<div>
-					<p>
-						Land
-					</p>
-					<div>
-						<i class="fas fa-globe-africa"></i>
-						<input type="text">
-					</div>
-				</div>
-			</div>
-		</section>
-		<section>
+					<div class="row">
+						<div class="form__group">
+							<label class="label" for="price">
+								Prijs
+							</label>
+							<div class="row">
+								<i class="fas fa-dollar-sign icon icon--blue"></i>
+								<div class="slider__container">
+									<input type="range" min="1" max="100" value="50" class="slider" id="price">
+								</div>
+							</div>
+						</div>
+						<div class="form__group">
+							<label class="label" for="room-quantity">
+								Kamers
+							</label>
+							<div>
+								<i class="fas fa-home icon icon--blue"></i>
+								<input id="room-quantity" type="number" name="quantity" min="1">
+							</div>
+						</div>
 
-		</section>
+					</div>
+					<div class="row">
+						<button type="submit" class="btn">
+							Zoek
+						</button>
+						<div>
+							<input type="checkbox" name="" value="sold-public"> Openbare verkopen <br>
+							<input type="checkbox" name="" value="new-housing"> Nieuw vastgoed <br>
+						</div>
+					</div>
+				</form>
+			</section>
+			<section class="row row--stretch">
+				<div class="section">
+					<h1>Snel zoeken</h1>
+					<form class="form" action="">
+						<label class="label" for="code">
+							Immoweb code
+						</label>
+						<input id="code" type="text">
+						<button type="submit" class="btn">
+							Zoek
+						</button>
+					</form>
+				</div>
+				<div class="section">
+					<h1>Immoweb blog</h1>
+					<p>gaat met u mee in vastgoed</p>
+					<ul>
+						<li>huren</li>
+						<li>kopen</li>
+						<li>verkopen</li>
+					</ul>
+					<a href="#" class="btn">Ontdek</a>
+
+				</div>
+			</section>
+			<section>
+				<div class="row">
+					<h1 class="heading--1">
+						Panden in jouw omgeving
+					</h1>
+					<a class="btn" href="#">
+						Bekijk alles
+					</a>
+				</div>
+
+			</section>
+		</main>
+
 	</body>
 </html>
