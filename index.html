@@ -54,7 +54,7 @@
 			</nav>
 			<div class="hero">
 				<div class="ctn-image">
-					<img class="hero__image" src="https://www.immoweb.be/Mx_Photos/nl/490/3012_4A360997-1321-B1DA-60C51AF12C65B8C5_NL.jpg" alt="">
+					<img class="hero__image" src="https://www.listenmoneymatters.com/wp-content/uploads/2018/04/LMM-Cover-Images-2.jpg" alt="">
 				</div>
 				<div class="hero__content">
 					<div>
@@ -91,107 +91,120 @@
 		</header>
 		<main class="main">
 			<section class="section section--white is-pull-up">
-				<nav class="nav">
-					<ul class="nav__bar">
-						<li class="nav__item">
+				<nav class="nav nav-sec">
+					<ul class="nav__bar nav-sec__bar">
+						<li class="nav__item nav-sec__item is-active">
 							Te koop
 						</li>
-						<li class="nav__item">
+						<li class="nav__item nav-sec__item">
 							Te huur
 						</li>
-						<li class="nav__item">
+						<li class="nav__item nav-sec__item">
 							Vakantie
 						</li>
-						<li class="nav__item">
+						<li class="nav__item nav-sec__item">
 							plaats zoekertje
 						</li>
 					</ul>
 				</nav>
-				<form class="form">
-					<div class="row">
-						<div class="form__group">
-							<label class="label" for="type">
-								Type vastgoed
-							</label>
-							<div class="row">
-								<i class="fas fa-home icon icon--blue"></i>
-								<select class="select" id="type">
-									<option value="huis">Huizen</option>
-									<option value="appartement">Appartementen</option>
-									<option value="studio">Studio's</option>
-								</select>
+				<div class="section__content">
+					<form class="form">
+						<div class="row section__row">
+							<div class="form__group">
+								<label class="label" for="type">
+									Type vastgoed
+								</label>
+								<div class="row">
+									<i class="fas fa-home icon icon--blue"></i>
+									<select class="select" id="type">
+										<option value="huis">Huizen</option>
+										<option value="appartement">Appartementen</option>
+										<option value="studio">Studio's</option>
+									</select>
+								</div>
 							</div>
-						</div>
-						<div class="form__group">
-							<label class="label" for="country">
-								Land
-							</label>
-							<div>
-								<i class="fas fa-globe-africa icon icon--blue"></i>
-								<input id="country" type="text">
+							<div class="form__group">
+								<label class="label" for="country">
+									Land
+								</label>
+								<div class="row">
+									<i class="fas fa-globe-africa icon icon--blue"></i>
+									<input class="input" id="country" type="text" value="België">
+								</div>
 							</div>
-						</div>
-						<div class="form__group">
-							<label class="label" for="place">
-								Ligging
-							</label>
-							<div>
-								<i class="fas fa-map-marker-alt icon icon--blue"></i>
-								<input id="place" type="text">
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="form__group">
-							<label class="label" for="price">
-								Prijs
-							</label>
-							<div class="row">
-								<i class="fas fa-dollar-sign icon icon--blue"></i>
-								<div class="slider__container">
-									<input type="range" min="1" max="100" value="50" class="slider" id="price">
+							<div class="form__group">
+								<label class="label" for="place">
+									Ligging
+								</label>
+								<div class="row">
+									<i class="fas fa-map-marker-alt icon icon--blue"></i>
+									<input class="input" id="place" type="text" value="Gent">
 								</div>
 							</div>
 						</div>
-						<div class="form__group">
-							<label class="label" for="room-quantity">
-								Kamers
-							</label>
-							<div>
-								<i class="fas fa-home icon icon--blue"></i>
-								<input id="room-quantity" type="number" name="quantity" min="1">
+						<div class="row section__row">
+							<div class="form__group">
+								<label class="label" for="price">
+									Prijs
+								</label>
+								<div class="row">
+									<i class="fas fa-dollar-sign icon icon--blue"></i>
+									<i class="fal fa-usd-circle"></i>
+									<div class="slider__container">
+										<input type="range" min="1" max="100" value="20" class="slider" id="price">
+									</div>
+								</div>
+								<div class="row">
+									<input class="input" type="text" value="€ 10 000">
+									<i class="fas fa-chevron-right icon icon--blue"></i>
+									<input class="input" type="text" value="€ 100 000">
+								</div>
+							</div>
+							<div class="form__group">
+								<label class="label" for="room-quantity">
+									Kamers
+								</label>
+								<div class="row">
+									<i class="fas fa-bed icon icon--blue"></i>
+									<input class="input" id="room-quantity" type="number" name="quantity" min="1" value="1">
+								</div>
+							</div>
+
+						</div>
+						<div class="row">
+							<button class="btn btn--big" type="submit">
+								Zoek
+							</button>
+							<div class="checkbox__container">
+								<div>
+									<input type="checkbox" name="" value="sold-public" checked> Openbare verkopen
+								</div>
+								<div>
+									<input type="checkbox" name="" value="new-housing"> Nieuw vastgoed
+								</div>
 							</div>
 						</div>
-
-					</div>
-					<div class="row">
-						<button type="submit" class="btn">
-							Zoek
-						</button>
-						<div>
-							<input type="checkbox" name="" value="sold-public"> Openbare verkopen <br>
-							<input type="checkbox" name="" value="new-housing"> Nieuw vastgoed <br>
-						</div>
-					</div>
-				</form>
+					</form>
+				</div>
 			</section>
-			<section class="row row--stretch">
+			<section class="row row--stretch row-of-two">
 				<div class="section">
-					<h1>Snel zoeken</h1>
+					<h1 class="section__heading">Snel zoeken</h1>
 					<form class="form" action="">
-						<label class="label" for="code">
+						<label for="code">
 							Immoweb code
 						</label>
-						<input id="code" type="text">
+						<input class="input" id="code" type="text">
 						<button type="submit" class="btn">
 							Zoek
 						</button>
 					</form>
 				</div>
 				<div class="section">
-					<h1>Immoweb blog</h1>
+					<h1 class="section__heading">Immoweb blog</h1>
 					<p>gaat met u mee in vastgoed</p>
-					<ul>
+					<hr class="hr--blue">
+					<ul class="nav__bar">
 						<li>huren</li>
 						<li>kopen</li>
 						<li>verkopen</li>
@@ -208,6 +221,46 @@
 					<a class="btn" href="#">
 						Bekijk alles
 					</a>
+				</div>
+				<div>
+					<div class="ctn-image">
+						<img src="https://www.washingtonian.com/wp-content/uploads/2019/06/gorka-house-2048x1326.jpeg" alt="">
+					</div>
+					<div class="row">
+						<div>
+							€ 175.000
+						</div>
+						<div class="row">
+							<i class="fas fa-map-marker-alt icon icon--blue"></i>
+							<div>
+								Mechelen
+							</div>
+						</div>
+					</div>
+					<hr class="hr--green">
+					<h2>
+						Huis in centrum
+					</h2>
+					<p>
+						Huis met twee slaapkamers in het centrum
+					</p>
+					<div class="row">
+						<div class="row">
+							<i class="fas fa-home icon icon--blue"></i>
+							<p>
+								145m2
+							</p>
+						</div>
+						<div class="row">
+							<i class="fas fa-bed icon icon--blue"></i>
+							<p>
+								5
+							</p>
+						</div>
+						<div>
+							<i class="fas fa-balance-scale-left icon"></i>
+						</div>
+					</div>
 				</div>
 
 			</section>
