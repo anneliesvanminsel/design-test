@@ -16,32 +16,32 @@
 						</div>
 					</li>
 					<li class="nav__item">
-						<a href="#">
+						<a class="link" href="#">
 							Te koop
 						</a>
 					</li>
 					<li class="nav__item">
-						<a href="#">
+						<a class="link" href="#">
 							Te huur
 						</a>
 					</li>
 					<li class="nav__item">
-						<a href="#">
+						<a class="link" href="#">
 							Makelaars
 						</a>
 					</li>
 					<li class="nav__item">
-						<a href="#">
+						<a class="link" href="#">
 							Bouwen
 						</a>
 					</li>
 					<li class="nav__item">
-						<a href="#">
+						<a class="link" href="#">
 							Vakantie
 						</a>
 					</li>
 					<li class="nav__item">
-						<a href="#">
+						<a class="link" href="#">
 							FAQ
 						</a>
 					</li>
@@ -154,10 +154,10 @@
 										<input type="range" min="1" max="100" value="20" class="slider" id="price">
 									</div>
 								</div>
-								<div class="row">
-									<input class="input" type="text" value="€ 10 000">
+								<div class="row label row--center">
+									<input class="input input--small" type="text" value="€ 10 000">
 									<i class="fas fa-chevron-right icon icon--blue"></i>
-									<input class="input" type="text" value="€ 100 000">
+									<input class="input input--small" type="text" value="€ 100 000">
 								</div>
 							</div>
 							<div class="form__group">
@@ -188,81 +188,167 @@
 				</div>
 			</section>
 			<section class="row row--stretch row-of-two">
-				<div class="section">
-					<h1 class="section__heading">Snel zoeken</h1>
+				<div class="cta">
+					<h1 class="cta__heading">Snel zoeken</h1>
 					<form class="form" action="">
-						<label for="code">
+						<label class="cta__label" for="code">
 							Immoweb code
 						</label>
 						<input class="input" id="code" type="text">
-						<button type="submit" class="btn">
+						<button type="submit" class="btn cta__button">
 							Zoek
 						</button>
 					</form>
 				</div>
-				<div class="section">
-					<h1 class="section__heading">Immoweb blog</h1>
-					<p>gaat met u mee in vastgoed</p>
+				<div class="cta">
+					<h1 class="cta__heading">Immoweb blog</h1>
+					<p class="cta__subtitle">gaat met u mee in vastgoed</p>
 					<hr class="hr--blue">
-					<ul class="nav__bar">
-						<li>huren</li>
-						<li>kopen</li>
-						<li>verkopen</li>
+					<ul class="nav__bar cta__list">
+						<li class="cta__list__item">huren</li>
+						<li class="cta__list__item">kopen</li>
+						<li class="cta__list__item">verkopen</li>
 					</ul>
-					<a href="#" class="btn">Ontdek</a>
-
+					<a href="#" class="btn cta__button">Ontdek</a>
 				</div>
 			</section>
 			<section>
 				<div class="row">
-					<h1 class="heading--1">
+					<h1 class="section__heading heading--1">
 						Panden in jouw omgeving
 					</h1>
 					<a class="btn" href="#">
 						Bekijk alles
 					</a>
 				</div>
-				<div>
-					<div class="ctn-image">
-						<img src="https://www.washingtonian.com/wp-content/uploads/2019/06/gorka-house-2048x1326.jpeg" alt="">
-					</div>
-					<div class="row">
-						<div>
-							€ 175.000
+				<div class="grid">
+					<div class="grid__item">
+						<div class="ctn-image grid__item__image">
+							<img src="https://www.washingtonian.com/wp-content/uploads/2019/06/gorka-house-2048x1326.jpeg" alt="">
 						</div>
-						<div class="row">
-							<i class="fas fa-map-marker-alt icon icon--blue"></i>
+						<div class="grid__item__content">
+							<div class="row">
+								<div class="heading">
+									€ 175.000
+								</div>
+								<div class="row">
+									<i class="fas fa-map-marker-alt icon icon--blue"></i>
+									<div>
+										Mechelen
+									</div>
+								</div>
+							</div>
+							<hr class="hr--green">
+							<h2 class="grid__item__title">
+								Huis in centrum
+							</h2>
+							<p class="grid__item__text">
+								Huis met twee slaapkamers in het centrum. Grote tuin, fijne buurt en dichtbij een station.
+							</p>
+						</div>
+						<div class="row grid__item__footer">
+							<div class="row">
+								<i class="fas fa-home icon icon--blue"></i>
+								<p>
+									145m2
+								</p>
+							</div>
+							<div class="row">
+								<i class="fas fa-bed icon icon--blue"></i>
+								<p>
+									5
+								</p>
+							</div>
 							<div>
-								Mechelen
+								<i class="fas fa-balance-scale-left icon"></i>
 							</div>
 						</div>
 					</div>
-					<hr class="hr--green">
-					<h2>
-						Huis in centrum
-					</h2>
-					<p>
-						Huis met twee slaapkamers in het centrum
-					</p>
-					<div class="row">
-						<div class="row">
-							<i class="fas fa-home icon icon--blue"></i>
-							<p>
-								145m2
+					<div class="grid__item">
+						<div class="ctn-image grid__item__image">
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8-X4QW8ZmxQw4CxLiHk-x3VQ4AQJRU6OfSyXH-h05B1e2Kz_N4w&s" alt="">
+						</div>
+						<div class="grid__item__content">
+							<div class="row">
+								<div class="heading">
+									€ 125.000
+								</div>
+								<div class="row">
+									<i class="fas fa-map-marker-alt icon icon--blue"></i>
+									<div>
+										Mechelen
+									</div>
+								</div>
+							</div>
+							<hr class="hr--green">
+							<h2 class="grid__item__title">
+								Huis in centrum
+							</h2>
+							<p class="grid__item__text">
+								Huis met twee slaapkamers in het centrum
 							</p>
 						</div>
-						<div class="row">
-							<i class="fas fa-bed icon icon--blue"></i>
-							<p>
-								5
+						<div class="row grid__item__footer">
+							<div class="row">
+								<i class="fas fa-home icon icon--blue"></i>
+								<p>
+									145m2
+								</p>
+							</div>
+							<div class="row">
+								<i class="fas fa-bed icon icon--blue"></i>
+								<p>
+									5
+								</p>
+							</div>
+							<div>
+								<i class="fas fa-balance-scale-left icon"></i>
+							</div>
+						</div>
+					</div>
+					<div class="grid__item">
+						<div class="ctn-image grid__item__image">
+							<img src="https://nha.org/wp-content/uploads/HS-Hadwen-House-Featured.jpg" alt="">
+						</div>
+						<div class="grid__item__content">
+							<div class="row">
+								<div class="heading">
+									€ 75.000
+								</div>
+								<div class="row">
+									<i class="fas fa-map-marker-alt icon icon--blue"></i>
+									<div>
+										Mechelen
+									</div>
+								</div>
+							</div>
+							<hr class="hr--green">
+							<h2 class="grid__item__title">
+								Huis in centrum
+							</h2>
+							<p class="grid__item__text">
+								Huis met twee slaapkamers in het centrum
 							</p>
 						</div>
-						<div>
-							<i class="fas fa-balance-scale-left icon"></i>
+						<div class="row grid__item__footer">
+							<div class="row">
+								<i class="fas fa-home icon icon--blue"></i>
+								<p>
+									145m2
+								</p>
+							</div>
+							<div class="row">
+								<i class="fas fa-bed icon icon--blue"></i>
+								<p>
+									5
+								</p>
+							</div>
+							<div>
+								<i class="fas fa-balance-scale-left icon"></i>
+							</div>
 						</div>
 					</div>
 				</div>
-
 			</section>
 		</main>
 
