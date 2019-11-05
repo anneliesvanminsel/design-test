@@ -470,6 +470,11 @@ input[type=checkbox]:checked:before {
     margin-left: 0;
 }
 
+.grid__item__image {
+    height: 300px;
+    overflow: hidden;
+}
+
 .grid__item__content {
     padding: 20px;
     flex-grow: 1;
