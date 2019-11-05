@@ -1,0 +1,51 @@
+/*
+    <<< HERO STYLING >>>
+*/
+
+.hero {
+	position: relative;
+	overflow: hidden;
+	height: 500px;
+
+	&__content {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		max-width: 400px;
+		color: white;
+		padding: 40px 10% 40px 40px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			bottom: 0;
+			left: -15%;
+			width: 9000px;
+			background-color: rgba($prim-color, .6);
+			transform: skew(-20deg);
+		}
+	}
+
+	&__text,
+	&__heading,
+	&__hr {
+		margin-bottom: 20px;
+	}
+
+	.btn {
+		margin-top: 20px;
+		padding: 10px 20px;
+	}
+
+	.ctn-image {
+		width: 100%;
+
+		img {
+			margin-top: -10%;
+		}
+	}
+}

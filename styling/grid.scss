@@ -1,0 +1,78 @@
+/*
+    <<< GRID >>>
+*/
+
+.grid {
+	margin-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	
+	
+	&__item {
+		display: flex;
+		flex-direction: column;
+		width: calc((100% - 40px) / 2);
+		margin: 20px;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.12);
+		
+		&:nth-child(even) {
+			margin-left: 20px;
+			margin-right: 0;
+		}
+		
+		&:nth-child(odd) {
+			margin-right: 20px;
+			margin-left: 0;
+		}
+		
+		&__image {
+			height: 300px;
+			overflow: hidden;
+		}
+		
+		&__content {
+			padding: 20px;
+			flex-grow: 1;
+			
+			.row {
+				color: $sec-color;
+				margin-bottom: 10px;
+				
+				.heading {
+					font-size: 30px;
+					font-weight: 700;
+				}
+			}
+		}
+		
+		&__title {
+			color: $prim-color;
+			margin: 10px 0;
+		}
+		
+		&__footer {
+			background-color: $prim-color;
+			color: $sec-text-color;
+			
+			& > * {
+				padding: 10px 20px;
+			}
+			
+			div:last-child {
+				background-color: $sec-color;
+			}
+			
+			.icon {
+				color: $sec-text-color;
+				font-size: 30px;
+				margin-right: 10px;
+				
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
+
