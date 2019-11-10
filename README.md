@@ -1,11 +1,14 @@
 # Immotheker website
 
+used picturs from pexels.com
+used icons from Font Awesome
+
 ## Werken met Sass
 
 ### Installeren van Sass
  npm install node-sass
  
- compiler: koala
+ compiler: koala http://koala-app.com/
 
 ### Gebruiken van Sass
 

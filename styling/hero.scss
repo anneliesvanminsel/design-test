@@ -13,10 +13,15 @@
 		top: 0;
 		bottom: 0;
 		right: 0;
-		max-width: 400px;
+		max-width: 100%;
+		padding: 90px;
 		color: white;
-		padding: 40px 10% 40px 40px;
-
+		
+		@media (min-width: $breakpoint-tablet) {
+			max-width: 400px;
+			padding: 40px 10% 40px 40px;
+		}
+		
 		&::before {
 			content: "";
 			position: absolute;
@@ -26,7 +31,10 @@
 			left: -15%;
 			width: 9000px;
 			background-color: rgba($prim-color, .6);
-			transform: skew(-20deg);
+			
+			@media (min-width: $breakpoint-tablet) {
+				transform: skew(-20deg);
+			}
 		}
 	}
 
@@ -35,6 +43,11 @@
 	&__hr {
 		margin-bottom: 20px;
 	}
+	
+	&__row {
+		justify-content: space-between;
+		margin-top: 20px;
+	}
 
 	.btn {
 		margin-top: 20px;
@@ -42,10 +55,19 @@
 	}
 
 	.ctn-image {
+		height: 100%;
 		width: 100%;
+		
 
 		img {
-			margin-top: -10%;
+			height: 100%;
+			width: auto;
+			
+			@media (min-width: $breakpoint-tablet) {
+				height: auto;
+				width: 100%;
+				margin-top: -10%;
+			}
 		}
 	}
 }
