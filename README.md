@@ -1,23 +1,25 @@
 # Immotheker website
 
-used picturs from pexels.com
-used icons from Font Awesome
+Alle gebruikte afbeeldingen komen van www.pexels.com.
+Iconen komen van Font Awesome.
 
 ## Werken met Sass
 
 ### Installeren van Sass
- npm install node-sass
- 
- compiler: koala http://koala-app.com/
+Ik installeer node-Sass door onderstaand command uit te voeren.
+> npm install node-sass
+
+Om Sass te compilen maak ik gebruik van GUI Koala (http://koala-app.com/)
 
 ### Gebruiken van Sass
+Ik maak als eerste een algemeen Sass-file aan. (hier: style.scss) 
+Daarna schrijf ik de verschillende variabelen die ik gebruik doorheen het project neer. Dit zijn de gebruikte kleuren en de breakpoints.
+In andere projecten zet ik hier ook de verschillende soorten afstanden in die gebruikt kunnen worden voor de margins en paddings van de verschillende elementen.
 
-I started with adding a general .scss-file. Then i added a variables.scss file.
-in that file i added the used colors and the breakpoints i will be using to make the project responsive.
+Voor elke component wordt een aparte file gemaakt. Deze worden in de algemene file geimporteerd.
 
-the markup from the scss-files are the same as i learned at my internship. It has
-been lerned to me by using ESlint. 
+De layout van de scss-files is gebaseerd op die dat ik tijdens mijn stage heb moeten leren.
+Fouten hiertegen werden toen door ES-lint opgespoord. 
 
-Every component gets its own .scss-file. 
 
 
