@@ -12,7 +12,11 @@
 		width: 100%;
 		
 		@media (min-width: $breakpoint-tablet) {
-			width: 530px;
+			width: 400px;
+		}
+		
+		@media (min-width: $breakpoint-desktop-small) {
+			width: 500px;
 		}
 	}
 	

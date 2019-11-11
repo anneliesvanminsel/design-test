@@ -385,7 +385,10 @@ input[type=checkbox]:checked:before {
     width: 100%; }
     @media (min-width: 768px) {
       .slider__container {
-        width: 530px; } }
+        width: 400px; } }
+    @media (min-width: 960px) {
+      .slider__container {
+        width: 500px; } }
   .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
