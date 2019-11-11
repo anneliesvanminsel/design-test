@@ -1,0 +1,17 @@
+.hr {
+	border: none;
+	border-top: 1px solid;
+	
+	
+	&--blue {
+		border-color: $prim-color;
+	}
+	
+	&--green {
+		border-color: $sec-color;
+	}
+	
+	&--white {
+		border-color: $sec-text-color;
+	}
+}

@@ -5,9 +5,7 @@
 /*
 	<<< BREAKPOINTS >>>
 */
-/*
-    <<< GENERAL STYLING >>>
-*/
+/* <<< GENERAL STYLING >>> */
 * {
   padding: 0;
   margin: 0; }
@@ -22,7 +20,10 @@ a {
   text-decoration: none; }
 
 section {
-  margin-top: 5%; }
+  margin-top: 40px; }
+  @media (min-width: 768px) {
+    section {
+      margin-top: 5%; } }
 
 .main {
   margin: 0 auto;
@@ -38,12 +39,23 @@ section {
   .icon--blue {
     color: #3f6cad; }
 
-/*
-    <<< PULL UP >>>
-*/
 .is-pull-up {
   margin-top: -15%;
   border: none; }
+
+.btn {
+  display: inline-block;
+  background-color: #3f6cad;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px 15px; }
+  .btn--green {
+    background-color: #3f6cad; }
+  .btn--big {
+    padding: 15px 60px;
+    font-size: 20px; }
 
 .row {
   display: flex;
@@ -89,20 +101,6 @@ section {
     border-color: #b5c236; }
   .hr--white {
     border-color: #ffffff; }
-
-.btn {
-  display: inline-block;
-  background-color: #3f6cad;
-  color: white;
-  border: none;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 5px 15px; }
-  .btn--green {
-    background-color: #3f6cad; }
-  .btn--big {
-    padding: 15px 60px;
-    font-size: 20px; }
 
 .header {
   width: 100%; }
